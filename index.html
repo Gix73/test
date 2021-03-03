@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+</head>
+<body>
+<header>
+    <nav class="header-div">
+        <h1>Curriculum vitae</h1> 
+    </nav>
+</header>
+<main>
+    <div class="main-div">
+        <div>
+            <h2 class="h2-first">Purpose</h2>
+            <hr>
+            <p> Acquiring practical and theoretical skills in the IT sphere for further employment.</p>
+            <h2>Work experience</h2>
+            <hr>
+            <p> None.</p>
+            <p>But I am interested in learning English and modern web technologies.</p>
+            <h2>Education</h2>
+            <hr>
+            <span> Secondary specialized (software technician).</span><br>
+            <span>I studied for 4 years at the Orsha’s College of Vitebsk State University named after</span><br>
+            <span>P.M. Masherov on the specialty “Information Technology Software”.</span><br>
+            <br>
+            <span>Now I am a student of Vitebsk State University named after P.M.Masherov.</span><br>
+            <span>I am studying in the second year of the specialty “Information Technology Software”.</span><br>
+            <h2>Code example</h2>
+            <hr>
+            <pre>
+                <code>
+static int[] RandomPermutation(int[] a)
+{
+    Random random = new Random();
+    var n = a.Length;
+    while (n > 1)
+    {
+        n--;
+        var i = random.Next(n + 1);
+        var temp = a[i];
+        a[i] = a[n];
+        a[n] = temp;
+    }
+    return a;
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+</main>
+<aside>
+    <div class="aside-div">
+        <section> 
+            <figure>
+                <img src="img/profile.jpg" alt="avatar">
+            </figure> 
+            <ul>
+                <li><h2>Personal info</h2></li>
+                <li><h3>Name</h3></li>
+                <li><p> Kisel Dzmitry</p></li>
+                <li><h3>Telephone</h3></li>
+                <li><p> +375(29) 211-15-11</p></li>
+                <li><h3>Email</h3></li>
+                <li class="a-marg"><a href="mailto:gix73@yandex.ru"> gix73@yandex.ru</a></li>
+            </ul>     
+            <hr>     
+        </section>
+        <div>
+            <h2>Skills</h2>
+            <hr>
+            <ul>
+                <li>Basic knowledge of: 
+                    <ul class="li-marg">
+                        <li>C++</li>
+                        <li>C#</li>
+                    </ul>
+                </li>
+                <li>Learning JS for one month</li>
+            </ul>
+            <p></p>
+        </div>
+    </div>
+</aside>
+
+</body>
+</html>
